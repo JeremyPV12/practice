@@ -38,4 +38,4 @@ COPY --from=build /app/dist/ /app/static/
 EXPOSE 5000
 
 # Comando para ejecutar Flask
-CMD ["python", "app.py"]
+CMD ["python", "app.py","--host=0.0.0.0"]
